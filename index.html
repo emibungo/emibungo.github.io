@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
   </head>
 
   <body>
@@ -20,46 +20,42 @@
             An image of the perfect human being.
           </figcaption>
         </figure>
-        <h1 class="main-header__title">Emi Bungo</h1>
+        <h1 class="main-header__title"><a href = "./index.html">Emi Bungo</a></h1>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation___list-item">
+              <a href="#about-me"><h3>About Me</h3></a>
+            </li>
+            <li class="navigation___list-item">
+              <a href="#projects"><h3>Projects</h3></a>
+            </li>
+            <li class="navigation___list-item">
+              <a href="#contact"><h3>Contact</h3></a>
+            </li>
+          </ul>
+        </nav>
       </header>
 
       <main>
-        <aside class="sidebar">
-          <nav class="navigation">
-            <ul class="navigation__list">
-              <li class="navigation___list-item">
-                <a href="#about-me"><h3>About Me</h3></a>
-              </li>
-              <li class="navigation___list-item">
-                <a href="#projects"><h3>Projects</h3></a>
-              </li>
-              <li class="navigation___list-item">
-                <a href="#contact"><h3>Contact</h3></a>
-              </li>
-            </ul>
-          </nav>
-        </aside>
         
         <div class="container">
           <section class="about-me">
-            <section>
-              <a href="#about-me"><h3>About Me</h3></a>
-              <ul>
-                <section>
-                  <li>Biography</li>
-                </section>
-                <section>
-                  <li>Skills</li>
-                </section>
-                <section>
-                  <li>Let's Connect</li>
-                </section>
-              </ul>
-            </section>
+            <a href="#about-me"><h3>About Me</h3></a>
+            <ul>
+              <section>
+                <li>Biography</li>
+              </section>
+              <section>
+                <li>Skills</li>
+              </section>
+              <section>
+                <li>Let's Connect</li>
+              </section>
+            </ul>
             <p><a href="#">Return to Top</a></p>
           </section>
 
-          <section>
+          <section class="projects">
             <a href="#projects"><h3>Projects</h3></a>
             <article>
               <ul>
@@ -91,10 +87,10 @@
                 </ul>
               </ul>
             </article>
+            <p><a href="#">Return to Top</a></p>
           </section>
-          <p><a href="#">Return to Top</a></p>
 
-          <section>
+          <section class="contact">
             <a href="#contact"><h3>Contact</h3></a>
             <ul>
               <h4>Emi Bungo</h4>
@@ -103,8 +99,8 @@
               </li>
               <li><a href="tel:+16144837702">+1.614.483.7702</a></li>
             </ul>
+            <p><a href="#">Return to Top</a></p>
           </section>
-          <p><a href="#">Return to Top</a></p>
         </main>
       </div>
 
