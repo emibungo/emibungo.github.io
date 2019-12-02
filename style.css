@@ -4,7 +4,11 @@
 }
 
 body {
+  display: grid;
+  justify-content: center;
+  align-content: center;
   background-color: #f8f8ef;
+  height: 100vh;
 }
 
 h1 {
@@ -25,8 +29,28 @@ h4 {
 }
 
 .blue-circle {
+  z-index: 1;
+  width: 200px;
+  height: 200px;
   background-color: #00c4cc;
-  height: 70px;
   opacity: 0.19;
-  width: 40px;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  /* margin-top: -100px; */
+  border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+/* .blue-circle:hover {
+  transform: scale(1.5);
+  transition: transform 200ms;
+} */
+
+.wrapper {
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
