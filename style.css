@@ -1,0 +1,32 @@
+* {
+  /* font-family: "Anonymous Pro", monospace;
+    font-family: "Raleway", sans-serif; */
+}
+
+body {
+  background-color: #f8f8ef;
+}
+
+h1 {
+  color: #ff8882;
+  font-family: "Anonymous Pro", monospace;
+}
+
+h3 {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+h4 {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+.blue-circle {
+  background-color: #00c4cc;
+  height: 70px;
+  opacity: 0.19;
+  width: 40px;
+}
