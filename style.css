@@ -1,12 +1,13 @@
 * {
-  /* font-family: "Anonymous Pro", monospace;
-    font-family: "Raleway", sans-serif; */
+  font-family: "Anonymous Pro", monospace;
+  font-family: "Raleway", sans-serif;
+  margin: 20px;
 }
 
 body {
   display: grid;
-  justify-content: center;
-  align-content: center;
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 40px 50px auto 50px 40px;
   background-color: #f8f8ef;
   height: 100vh;
 }
@@ -14,18 +15,21 @@ body {
 h1 {
   color: #ff8882;
   font-family: "Anonymous Pro", monospace;
+  margin: 0;
 }
 
 h3 {
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
+  margin: 0;
 }
 
 h4 {
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
+  margin: 0;
 }
 
 .blue-circle {
@@ -34,23 +38,35 @@ h4 {
   height: 200px;
   background-color: #00c4cc;
   opacity: 0.19;
-  position: absolute;
-  left: 25%;
-  top: 50%;
-  /* margin-top: -100px; */
   border-radius: 50%;
   display: grid;
-  justify-content: center;
-  align-content: center;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  justify-self: center;
+  align-self: center;
+  margin: 0;
+  transform: scale(1);
+  transition: transform 200ms;
+  transition-delay: 0s;
 }
 
 .blue-circle:hover {
   transform: scale(1.5);
   transition: transform 200ms;
+  transition-delay: 0s;
 }
 
-.wrapper {
+.logo-wrapper__text {
   display: grid;
-  align-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, 42px);
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  justify-self: center;
+  align-self: center;
   justify-items: center;
+  align-items: center;
+  margin: 0;
 }
